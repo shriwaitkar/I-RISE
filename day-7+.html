@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="file:///C:/Users/Shri%20Hari/Downloads/magnifying-glass-solid.svg"></script>
         <title> day 7</title>
         <style>
               #screen{
@@ -16,31 +17,104 @@
               }
               #icon{
                 width: 10%;
-                border: 5px solid purple;
+                /* border: 5px solid purple; */
                 display: flex;
+              }
+              #myntraIcon{
+                margin-top: 10px;
+                margin-left: 25%;
+                width: 50%;
+                height: 60%;
               }
               #navi{
                 width: 32%;
-                border: 5px solid purple;
+                /* border: 5px solid purple; */
+                display: flex;
+                justify-content: space-between;
+              }
+              .naviSection{
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 20px;
               }
               #search{
                 width: 32%;
-                border: 5px solid purple;
+                /* border: 5px solid purple; */
+              }
+              #searchBox{
+                background-color: rgb(231, 225, 225);
+                margin-top: 13px;
+                height: 35px;
+              }
+              #searchIcon{
+                margin-top: 15px;
+                margin-left: 15px;
+
+              }
+              #searchInput{
+                background-color: rgb(240, 236, 236);
+                margin-top: 10px;
+                margin-left: 15px;
+                border: none;
+                outline: none;
+                color: grey;
               }
               #profile{
                 width: 15%;
-                height: 50px;
-                border: 5px solid green;
+                /* height: 250px; */
+                /* border: 5px solid green; */
+                display: flex;
+                justify-content: space-between;
+              }
+              #body{
+                width: 100%;
+                height: 250px;
+              }
+              .text-center{
+                text-align: center
+                padding 10px;
+              }
+              .profileIcon{
+                margin-bottom: 0px;
+              }
+              .margin-top-zero{
+                margin-top: 0;
               }
         </style>
     </head>
 <body>
     <div id="screen">
         <div id="navbar">
-            <div id="icon">Icon</div>
-            <div id="navi">Navigation</div>
-            <div id="search">Search Box</div>
-            <div id="profile">profile</div>
+            <div id="icon">
+                <img id="myntraIcon" src="./afaqs_2021-02_a8f26783-e239-4aa0-8463-3468223150f2_Myntra_Logo_1200x800.webp"/>
+            </div>
+            <div id="navi">
+                <span class="naviSection">MEN</span>
+                <span class="naviSection">WOMEN</span>
+                <span class="naviSection">KIDS</span>
+                <span class="naviSection">BEAUTY</span>
+                <span class="naviSection">STUDIO</span>
+            </div>
+            <div id="search">
+                <div id="searchBox">
+                <i id="searchIcon" class="fa-solid fa-magnifying-glass fa-lg"></i>
+                <input id="searchInput" placeholder="Serch Product.."/>
+                </div>
+            </div>
+            <div id="profile">
+                <div class="text-center">
+                    <i class="fa-regular fa-user fa-lg profileIcon"></i>
+                    <p class="margin-top-zero">PROFILE</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-regular fa-heart fa-lg profileIcon"></i>
+                    <p class="margin-top-zero">WISHLIST</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-regular fa-cart-shopping fa-lg profileIcon"></i>
+                    <p class="margin-top-zero">BAG</p>
+                </div>
+            </div>
 
         </div>
         <div id="body">Body Part</div>
